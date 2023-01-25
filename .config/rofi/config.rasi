@@ -1,0 +1,40 @@
+configuration {
+ transparency: "real";
+ modi: "window,drun,ssh,combi";
+ font: "CaskaydiaCove Nerd Font 12";
+ combi-modi: "window,drun,ssh";
+ display-drun: 					"";
+}
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+window {
+    background-color: @background;
+    text-color: @foreground;
+    width: 500px;
+    height: 25%;
+    border: 3px;
+    border-color: @urgent-background;
+    border-radius: 5;
+}
+
+scrollbar{
+    background-color: @active-background;
+    handle-color: @urgent-background;
+}
+
+entry {
+	placeholder:			"Search";
+	expand:                         true;
+	cursor:				text;
+}
+
+prompt{
+    padding: 0% 0.5% 0.5% -0.5%;
+}
+
+element{
+    orientation: horizontal;
+    border-radius: 40px;
+    padding: 0.5% 0.5%;
+}
