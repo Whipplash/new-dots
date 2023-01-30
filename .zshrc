@@ -2,6 +2,9 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+export ANSIBLE_HOME="$HOME/repos/ansible"
+export ANSIBLE_VAULT_PASSWORD_FILE="$ANSIBLE_HOME/.vault_pass"
+export EDITOR="nvim"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:"/home/matt/.local/bin"
 export PATH=$PATH:"/snap/bin"
@@ -116,6 +119,7 @@ alias displays='/usr/bin/xrandr -q'
 alias ra='ranger' 
 alias flashkeeb="qmk flash -kb crkbd -km Whipplash -bl dfu"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias mansible='ansible-doc'
 
 eval "$(starship init zsh)"
 #(cat  ~/.config/wpg/sequences &)
