@@ -26,7 +26,7 @@ alert = #ed404c
 
 [bar/primary]
 bottom = true
-monitor = ${env:MONITOR:}
+monitor = ${env:0}
 enable-ipc = true
 wm-restack = bspwm
 
@@ -49,7 +49,7 @@ padding-right = 3
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = JetBrains Mono ExtraBold:pixelsize=12;3
+font-0 = JetBrains Mono Bold:pixelsize=12;3
 font-1 = FontAwesome:size=8;1
 font-2 = siji:pixelsize=10;1
 

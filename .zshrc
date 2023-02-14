@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias neofetch='/usr/bin/neofetch --w3m --source $HOME/Pictures/beluga.png'
+alias neofetch='/usr/bin/neofetch --w3m --source $HOME/Pictures/beluga.png --size 375'
 alias displays='/usr/bin/xrandr -q'
 alias ra='ranger' 
 alias flashkeeb="qmk flash -kb crkbd -km Whipplash -bl dfu"
