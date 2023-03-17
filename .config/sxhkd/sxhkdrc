@@ -52,6 +52,9 @@ alt + ctrl + shift + s
 alt + shift + s
     scrot -ou '/tmp/snapshot.png' -e "curl -F 'file=@/tmp/snapshot.png' 0x0.st | xclip -selection clipboard"
 
+ctrl + shift + s
+    sleep 5 && maim -u -g 3440x1440+2560+986 --format png /dev/stdout | xclip -selection clipboard -t image/png -i
+
 #File Explorer
 alt + ctrl + r
         bspc node @/ -R 90

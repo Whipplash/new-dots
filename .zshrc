@@ -2,11 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ANSIBLE_HOME="$HOME/repos/ansible"
-export ANSIBLE_VAULT_PASSWORD_FILE="$ANSIBLE_HOME/.vault_pass"
+#export ANSIBLE_HOME="$HOME/repos/ansible"
+#export ANSIBLE_VAULT_PASSWORD_FILE="$ANSIBLE_HOME/.vault_pass"
 export EDITOR="nvim"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:"/home/matt/.local/bin"
+export PATH=$PATH:"/home/matt/.nvm/versions/node/v19.5.0/bin"
 export PATH=$PATH:"/snap/bin"
 export PICO_SDK_PATH="/usr/share/pico-sdk"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
