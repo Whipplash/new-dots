@@ -6,8 +6,8 @@
     "spacing": 15,
 
     "modules-left": ["wlr/workspaces"],
-    "modules-center": [],
-    "modules-right": ["tray","pulseaudio","temperature","custom/sep","backlight","battery","network","clock"],
+    "modules-center": ["tray"],
+    "modules-right": ["pulseaudio","custom/sep","temperature","backlight","battery","network","custom/sep","clock"],
 
     "hyprland/window": {
     "format": "👉 {}",
@@ -44,7 +44,7 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureF}°F {icon}",
-        "format-icons": [""]
+        "format-icons": ["💻"]
     },
 
     "backlight": {

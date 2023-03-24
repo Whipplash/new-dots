@@ -1,3 +1,5 @@
+@import "/home/matt/.cache/wal/colors-waybar.css";
+
 window {
   margin: 0px;
   border: 5px solid #111019;
@@ -32,7 +34,7 @@ window {
   padding: 3px;
   border: none;
   border-radius: 15px;
-  border: 5px solid #111019;
+  border: 5px solid @background;
 }
 
 #scroll {
@@ -43,7 +45,7 @@ window {
 }
 
 #text:selected {
-  color: #f1f0f5;
+  color: @background;
   margin: 0px 0px;
   border: none;
   border-radius: 15px;
@@ -60,5 +62,6 @@ window {
   margin: 0px 0px;
   border: none;
   border-radius: 15px;
-  background: linear-gradient(90deg, #E97193 0%, #f09db5 100%);
+  background: @cursor;
+  / * background: linear-gradient(90deg, #E97193 0%, #f09db5 100%); * /
 }

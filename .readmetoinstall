@@ -4,3 +4,11 @@ alias dotfiles='/usr/bin/git --git-dir=<path to .cfg’s Git directory> --work-t
 dotfiles config --local status.showUntrackedFiles no
 dotfiles checkout
 
+TO DO:
+Automate Starship, zsh, neovim, update-alternatives, oh-my-zsh (It's all I can think of right now) to auto-install. Then do above.
+
+Explore foot config
+
+Explore Hyprland config
+
+Explore Wofi config

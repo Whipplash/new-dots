@@ -11,16 +11,16 @@ window#waybar {
 
 .modules-center {
     background: @background;
-    border: 4px solid @foreground;
+    border:3px solid @foreground;
     border-radius: 5px;
     margin-left: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .modules-right {
     background: @background;
-    border: 4px solid @foreground;
+    border:3px solid @foreground;
     border-radius: 5px;
     color: #E0E0E0;
     margin-right: 10px;
@@ -30,7 +30,7 @@ window#waybar {
 
 .modules-left {
     background: @background;
-    border: 4px solid @foreground;
+    border:3px solid @foreground;
     border-radius: 5px;
     color: #E0E0E0;
     margin-right: 10px;

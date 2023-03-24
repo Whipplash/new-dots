@@ -1,6 +1,16 @@
 #!/bin/sh
 
+# Desktop Entry under /usr/share/wayland-sessions is as follows:
+# [Desktop Entry]
+# Name=Hyprland-Extended
+# Comment=An intelligent dynamic tiling Wayland compositor
+# Exec=/home/matt/.local/bin/wayrc
+# Type=Application
+
 # export _JAVA_AWT_WM_NONREPARENTING=1
 export XCURSOR_SIZE=24
 
+#Wallpaper
+
+#Desktop launch
 exec Hyprland

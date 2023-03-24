@@ -6,11 +6,16 @@
 #export ANSIBLE_VAULT_PASSWORD_FILE="$ANSIBLE_HOME/.vault_pass"
 export EDITOR="nvim"
 export ZSH="$HOME/.oh-my-zsh"
-export PATH=$PATH:"/home/matt/.local/bin"
-export PATH=$PATH:"/home/matt/.nvm/versions/node/v19.5.0/bin"
+export PATH=$PATH:"$HOME/.local/bin"
+export PATH=$PATH:"$HOME/.nvm/versions/node/v19.5.0/bin"
+export PATH=$PATH:"$HOME/.nvm/versions/node/v19.8.1/bin"
 export PATH=$PATH:"/snap/bin"
+export PATH=$PATH:"/usr/local/go/bin"
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 export PICO_SDK_PATH="/usr/share/pico-sdk"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export GCM_CREDENTIAL_STORE=gpg
 zstyle ':omz:plugins:nvm' lazy yes
 #export NVM_DIR="$HOME/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -124,5 +129,5 @@ alias mansible='ansible-doc'
 
 eval "$(starship init zsh)"
 #(cat  ~/.config/wpg/sequences &)
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 
