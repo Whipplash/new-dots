@@ -2,15 +2,7 @@
 # wm independent hotkeys
 #
 
-# Lock
-#alt + l
-#	dm-tool lock && systemctl suspend
 # terminal emulator
-alt + Return
-  urxvt
-  #alacritty
-	#kitty
-
 
 # make sxhkd reload its configuration files:
 alt + Escape
@@ -20,12 +12,15 @@ alt + Escape
 # bspwm hotkeys
 #
 
+alt + Return
+  alacritty
+
 # quit/restart bspwm
-alt + super + {q,r}
+alt + super + {Escape,r}
 	bspc {quit,wm -r}
 
 # close and kill
-alt + shift + q
+alt + q
 	bspc node -{c}
 
 # superernate between the tiled and monocle layout
@@ -55,7 +50,6 @@ alt + shift + s
 ctrl + shift + s
     sleep 5 && maim -u -g 3440x1440+2560+986 --format png /dev/stdout | xclip -selection clipboard -t image/png -i
 
-#File Explorer
 alt + ctrl + r
         bspc node @/ -R 90
 
@@ -98,7 +92,7 @@ alt + {p,b,comma,period}
 alt + {_,shift + }c
 	bspc node -f {next,prev}.local.!hidden.window
 
-# focus the next/previous desktop in the current monitor
+# Flip left/right through the workspaces
 alt + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
@@ -113,8 +107,15 @@ alt + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
-alt + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+#alt + {_,shift + }{1-9,0}
+#	bspc {desktop -f,node -d} '^{1-9,10}'
+
+alt + super + {q,w,e,a,s,d}
+  bspc {desktop --focus} '^{2-7}'
+
+
+alt + super + {_,shift + }{q,w,e,a,s,d}
+  bspc {desktop -f,node -d} '^{2-7}'
 
 #
 # preselect
@@ -125,11 +126,11 @@ alt + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # preselect the ratio
-alt + ctrl + {1-9}
-	bspc node -o 0.{1-9}
+alt + ctrl + {2-7}
+	bspc node -o 0.{2-7}
 
 # cancel the preselection for the focused node
-alt + ctrl + space
+alt + ctrl + Return
 	bspc node -p cancel
 
 # cancel the preselection for the focused desktop
@@ -158,14 +159,3 @@ XF86AudioRaiseVolume
 	sh -c "pactl set-sink-mute 3 false ; pactl set-sink-volume 3 +5%"
 XF86AudioMute
 	sh -c "pactl set-sink-mute 3 true"
-
-#Spotify control stuff
-alt + Left
-    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
-
-alt + Right
-    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
-
-alt + Down
-    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
-

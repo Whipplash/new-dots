@@ -16,6 +16,7 @@ export PATH="$PATH:$GOPATH/bin"
 export PICO_SDK_PATH="/usr/share/pico-sdk"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export GCM_CREDENTIAL_STORE=gpg
+export MANGOHUD=1
 zstyle ':omz:plugins:nvm' lazy yes
 #export NVM_DIR="$HOME/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
