@@ -8,9 +8,8 @@
 #
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
-#import:
-#  - /path/to/alacritty.yml
-
+import:
+  - ~/.config/alacritty/themes/themes/github_dark_default.yaml
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -44,13 +43,12 @@ env:
 #
 # Blank space added around the window in pixels. This padding is scaled
 # by DPI and the specified value is always added at both opposing sides.
-#padding:
-#  x: 0
+# padding:
+#  x: 100
 #  y: 0
 
 # Spread additional padding evenly around the terminal content.
-#dynamic_padding: false
-
+# dynamic_padding: true
 # Window decorations
 #
 # Values for `decorations`:
@@ -60,14 +58,12 @@ env:
 # Values for `decorations` (macOS only):
 #     - transparent: Title bar, transparent background and title bar buttons
 #     - buttonless: Title bar, transparent background and no title bar buttons
-#decorations: full
-
+# decorations: full
 # Background opacity
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-#opacity: 1.0
-
+# opacity: 0.5
 # Startup Mode (changes require restart)
 #
 # Values for `startup_mode`:
@@ -116,8 +112,8 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Spleen 32x64
-    #family: CaskaydiaCove Nerd Font
+    #family: Spleen 32x64
+    family: CaskaydiaCove Nerd Font Mono
     #family: Jetbrains Mono Nerd Font
     #family: Cascadia Code
 
@@ -157,7 +153,7 @@ font:
   #style: Bold Italic
 
   # Point size
-  size: 16
+  size: 12
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
