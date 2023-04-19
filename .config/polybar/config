@@ -17,7 +17,7 @@
 ;==========================================================
 [colors]
 background = ${xrdb:color0:#222} 
-foreground = ${xrdb:color7:#222}
+foreground = ${xrdb:color15:#222}
 primary = #02c084
 secondary = #65a2d9
 tertiary = ${xrdb:color2:#222}
