@@ -7,8 +7,7 @@
 export EDITOR="nvim"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:"$HOME/.local/bin"
-export PATH=$PATH:"$HOME/.nvm/versions/node/v19.5.0/bin"
-export PATH=$PATH:"$HOME/.nvm/versions/node/v19.8.1/bin"
+export PATH=$PATH:"$HOME/.nvm/versions/node/v20.4.0/bin"
 export PATH=$PATH:"/snap/bin"
 export PATH=$PATH:"/usr/local/go/bin"
 export PATH=$PATH:"/var/lib/snapd/snap/bin"
@@ -128,8 +127,9 @@ alias ra='ranger'
 alias flashkeeb="qmk flash -kb crkbd -km Whipplash -bl dfu"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias mansible='ansible-doc'
+alias vi='nvim'
 
 eval "$(starship init zsh)"
 #(cat  ~/.config/wpg/sequences &)
 #(cat ~/.cache/wal/sequences &)
-
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

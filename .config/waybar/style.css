@@ -1,7 +1,7 @@
 @import "../../.cache/wal/colors-waybar.css";
 
 window#waybar {
-    font-family: Fira Code NF;
+    font-family: Fira Code Nerd Font;
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
@@ -69,6 +69,7 @@ window#waybar {
 
 #network {
     color: @color5;
+    padding-right: 10px;
 }
 
 #clock {
@@ -79,10 +80,14 @@ window#waybar {
 
 }
 
+#backlight {
+    padding-right: 10px;
+}
+
 
 
 #battery {
-
+    padding-right: 10px;
 }
 
 #battery.charging {
