@@ -1,8 +1,8 @@
 {
     // [Waybar General Configuration options]
     "layer": "top",
-    "position": "bottom",
-    "height": 30,
+    "position": "top",
+    "height": 40,
     "spacing": 15,
 
     "modules-left": ["wlr/workspaces"],
