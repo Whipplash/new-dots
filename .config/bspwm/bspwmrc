@@ -7,10 +7,7 @@ fi
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 #Bars
-
- if [[ $(xrandr -q | grep 'DP-2 connected') ]]; then
-   bspc monitor DP-2 -d 1 2 3 4 5 6
-fi
+bspc monitor eDP-1 -d 1 2 3 4 5 6
 
 
 bspc config border_width         0

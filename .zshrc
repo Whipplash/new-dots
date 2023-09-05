@@ -90,6 +90,7 @@ HIST_STAMPS="mm/dd/yyyy"
 plugins=(
   git
   zsh-autosuggestions
+  colored-man-pages
   nvm
 )
 

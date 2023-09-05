@@ -111,11 +111,11 @@ alt + {o,i}
 #	bspc {desktop -f,node -d} '^{1-9,10}'
 
 alt + super + {q,w,e,a,s,d}
-  bspc {desktop --focus} '^{2-7}'
+  bspc {desktop --focus} '^{1-7}'
 
 
 alt + super + {_,shift + }{q,w,e,a,s,d}
-  bspc {desktop -f,node -d} '^{2-7}'
+  bspc {desktop -f,node -d} '^{1-7}'
 
 #
 # preselect
