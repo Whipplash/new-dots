@@ -89,7 +89,6 @@ HIST_STAMPS="mm/dd/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions
   colored-man-pages
   nvm
 )
@@ -134,3 +133,5 @@ eval "$(starship init zsh)"
 #(cat  ~/.config/wpg/sequences &)
 #(cat ~/.cache/wal/sequences &)
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
