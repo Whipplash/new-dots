@@ -1,0 +1,19 @@
+import = ["/Users/mkenkel/.config/alacritty/themes/themes/github_dark_default.toml"]
+
+[bell]
+animation = "EaseOutSine"
+color = "#111111"
+duration = 300
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 20.0
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font Mono"
+style = "Regular"
+
+[window]
+opacity = 1.0
