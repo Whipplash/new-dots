@@ -7,13 +7,13 @@
 export EDITOR="nvim"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:"$HOME/.local/bin"
-export PATH=$PATH:"$HOME/.nvm/versions/node/v20.4.0/bin"
+export PATH=$PATH:"$HOME/.nvm/versions/node/v21.1.0/bin"
 export PATH=$PATH:"/snap/bin"
 export PATH=$PATH:"/usr/local/go/bin"
 export PATH=$PATH:"/var/lib/snapd/snap/bin"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
-export PICO_SDK_PATH="/usr/share/pico-sdk"
+export PICO_SDK_PATH="$HOME/Repos/pico-sdk"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export GCM_CREDENTIAL_STORE=gpg
 export MANGOHUD=1
@@ -121,7 +121,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias neofetch='/usr/bin/neofetch --w3m --source $HOME/Pictures/beluga.png --size 375'
+alias neofetch='/opt/homebrew/bin/neofetch --w3m --source $HOME/Pictures/beluga.png --size 375'
 alias displays='/usr/bin/xrandr -q'
 alias ra='ranger' 
 alias flashkeeb="qmk flash -kb crkbd -km Whipplash -bl dfu"
