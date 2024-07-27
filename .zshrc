@@ -7,13 +7,13 @@
 export EDITOR="nvim"
 export ZSH="$HOME/.oh-my-zsh"
 export PATH=$PATH:"$HOME/.local/bin"
-export PATH=$PATH:"$HOME/.nvm/versions/node/v21.1.0/bin"
 export PATH=$PATH:"/snap/bin"
 export PATH=$PATH:"/usr/local/go/bin"
 export PATH=$PATH:"/var/lib/snapd/snap/bin"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 export PICO_SDK_PATH="$HOME/Repos/pico-sdk"
+export ANSIBLE_CONFIG="$HOME/.config/ansible/ansible.cfg"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export GCM_CREDENTIAL_STORE=gpg
 export MANGOHUD=1
@@ -121,17 +121,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias neofetch='/opt/homebrew/bin/neofetch --w3m --source $HOME/Pictures/beluga.png --size 375'
-alias displays='/usr/bin/xrandr -q'
-alias ra='ranger' 
+alias ls='lsd' 
 alias flashkeeb="qmk flash -kb crkbd -km Whipplash -bl dfu"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias mansible='ansible-doc'
 alias vi='nvim'
 
 eval "$(starship init zsh)"
-#(cat  ~/.config/wpg/sequences &)
-#(cat ~/.cache/wal/sequences &)
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# eval "$(zellij setup --generate-auto-start zsh)"
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+export REQUESTS_CA_BUNDLE="$HOME/.config/certs/allCAbundle.pem"
+export PIPX_HOME="$HOME/Library/pipx"
+export DOCKER_DEFAULT_PLATFORM="linux/amd64"
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
